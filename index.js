@@ -1,5 +1,12 @@
-const middleware = require("./lib/middleware");
-const logger = require("./lib/logger");
+const createMiddleware = require("./lib/createMiddleware");
+const createLogger = require("./lib/createLogger");
 
-module.exports = logger;
-module.exports.middleware = middleware;
+const chLogger = function (options) {
+
+    const logger = createLogger(options);
+    logger.middleware = createMiddleware(logger);
+
+    return logger;
+};
+
+module.exports = chLogger;
