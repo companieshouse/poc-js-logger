@@ -9,7 +9,7 @@
         "array-bracket-newline": ["error", { "multiline": true }],
         "array-bracket-spacing": 2,
         "array-callback-return": 2,
-        "array-element-newline": 2,
+        "array-element-newline": ["error", "consistent"],
         "arrow-body-style": 2,
         "arrow-spacing": 2,
         "block-scoped-var": 2,
@@ -264,6 +264,7 @@
     "env": {
         "node": true,
         "commonjs": true,
-        "browser": false
+        "mocha": true,
+        "jest": true
     }
 }
