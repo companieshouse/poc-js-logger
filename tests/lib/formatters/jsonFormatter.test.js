@@ -58,9 +58,37 @@ describe("#jsonFormatter", function () {
         expect(log.data.duration).to.equal(testInfo.duration);
     });
 
-    it("doesn't print undefined message keys");
+    it("doesn't print undefined message keys", function() {
+        const testInfo = {
+            level: "info",
+            message: undefined
+        }
 
-    it("doesn't handle keys which are not in the spec");
+        const logJSON = getLog(testInfo);
 
-    it("adds a created date and namespace");
+        expect(logJSON.message).to.not.equal(undefined);
+    });
+
+    it("doesn't handle keys which are not in the spec", function() {
+        
+        const testInfo = {
+            notAKey: "some value",
+            level: "debug"
+        };
+
+        const logJSON = getLog(testInfo);
+
+        expect(logJSON.notAKey).to.not.exist;
+        expect(logJSON.event).to.exist
+    });
+
+    it("created and namespace are always populated", function() {
+
+        const testInfo = {};
+        
+        const logJSON = getLog(testInfo);
+
+        expect(logJSON.created).to.exist
+        expect(logJSON.namespace).to.exist
+    });
 });
