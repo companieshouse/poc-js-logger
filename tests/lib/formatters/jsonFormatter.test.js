@@ -58,5 +58,9 @@ describe("#jsonFormatter", function () {
         expect(log.data.duration).to.equal(testInfo.duration);
     });
 
-    it("doesn't print undefined messageInfo keys");
+    it("doesn't print undefined message keys");
+
+    it("doesn't handle keys which are not in the spec");
+
+    it("adds a created date and namespace");
 });
