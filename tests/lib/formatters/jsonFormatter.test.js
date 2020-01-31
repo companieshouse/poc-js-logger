@@ -66,7 +66,7 @@ describe("#jsonFormatter", function () {
 
         const logJSON = getLog(testInfo);
 
-        expect(logJSON.message).to.not.equal(undefined);
+        expect(logJSON.message).to.equal(undefined);
     });
 
     it("doesn't handle keys which are not in the spec", function() {

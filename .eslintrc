@@ -4,6 +4,14 @@
         "sourceType": "script",
         "ecmaFeatures": {}
     },
+    "overrides": [
+        {
+            "files": ["*.test.js", "*.spec.js"],
+            "rules": {
+                "no-unused-expressions": "off"
+            }
+        }
+    ],
     "rules": {
         "accessor-pairs": 2,
         "array-bracket-newline": ["error", { "multiline": true }],
