@@ -59,6 +59,7 @@ describe("#jsonFormatter", function () {
     });
 
     it("doesn't print undefined message keys", function () {
+
         const testInfo = {
             level: "info",
             message: undefined
