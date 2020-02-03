@@ -108,7 +108,7 @@ describe("#humanFormatter", function () {
         expect(logString).to.not.contain("status");
     });
 
-    it("doesn't handle keys which are not in the spec", function () {
+    it("doesn't print keys which are not in the spec", function () {
 
         const testInfo = {
             level: "info",

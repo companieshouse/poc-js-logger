@@ -67,10 +67,10 @@ describe("#jsonFormatter", function () {
 
         const log = getLog(testInfo);
 
-        expect(log.message).to.not.equal(undefined);
+        expect(log.message).to.not.exist;
     });
 
-    it("doesn't handle keys which are not in the spec", function () {
+    it("doesn't print keys which are not in the spec", function () {
 
         const testInfo = {
             notAKey: "some value",
@@ -83,7 +83,7 @@ describe("#jsonFormatter", function () {
         expect(log.event).to.exist;
     });
 
-    it("created and namespace are always populated", function () {
+    it("adds a created date and namespace", function () {
 
         const testInfo = {};
 
