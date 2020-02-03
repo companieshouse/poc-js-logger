@@ -10,6 +10,11 @@
             "rules": {
                 "no-unused-expressions": "off"
             }
+        }, {
+            "files": ["config.js"],
+            "rules": {
+                "no-process-env": "off"
+            }
         }
     ],
     "rules": {
