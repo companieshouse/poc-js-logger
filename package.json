@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha tests/**/* --reporter nyan",
-    "lint": "eslint index.js lib/**/*.js"
+    "lint": "eslint index.js lib/**/*.js",
+    "test:watch": "mocha tests/**/* --reporter nyan --watch"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "chai": "~4.2.0",
     "eslint": "~6.8.0",
-    "mocha": "~7.0.1"
+    "mocha": "~7.0.1",
+    "proxyquire": "~2.1.3"
   }
 }
