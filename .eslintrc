@@ -43,7 +43,7 @@
         "curly": 2,
         "default-case": 2,
         "default-param-last": 2,
-        "dot-location": 2,
+        "dot-location": ["error", "property"],
         "dot-notation": ["error", { "allowPattern": "^[a-z]+(_[a-z]+)+$" }],
         "eol-last": 2,
         "eqeqeq": 2,
