@@ -2,7 +2,7 @@ require("mocha");
 const chai = require("chai");
 const expect = chai.expect;
 
-const jsonFormatter = require("../../../lib/formatters/jsonFormatter");
+const jsonFormatter = require("../../lib/formatters/jsonFormatter");
 
 describe("#jsonFormatter", function () {
 

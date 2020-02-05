@@ -3,7 +3,7 @@ const chai = require("chai");
 const expect = chai.expect;
 
 const winston = require("winston");
-const humanFormatter = require("../../../lib/formatters/humanFormatter");
+const humanFormatter = require("../../lib/formatters/humanFormatter");
 
 describe("#humanFormatter", function () {
 

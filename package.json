@@ -2,11 +2,11 @@
   "name": "ch-logger",
   "version": "0.0.1",
   "description": "A logging solution for CHS structured logging in node apps.",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
-    "test": "mocha tests/**/* --reporter nyan",
+    "test": "mocha --recursive --reporter nyan",
     "lint": "eslint index.js lib/**/*.js",
-    "test:watch": "mocha tests/**/* --reporter nyan --watch"
+    "test:watch": "mocha --recursive --reporter nyan --watch"
   },
   "repository": {
     "type": "git",

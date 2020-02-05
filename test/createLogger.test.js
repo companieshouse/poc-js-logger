@@ -15,7 +15,7 @@ describe("#createLogger", function () {
     };
 
     const createLoggerWithTestConfig = function (config) {
-        return proxyquire("../../lib/createLogger", {
+        return proxyquire("../lib/createLogger", {
             "./config": config,
             "./formatters/humanFormatter": function () {
                 return "human formatter";
