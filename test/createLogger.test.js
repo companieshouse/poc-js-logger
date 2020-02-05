@@ -1,3 +1,5 @@
+"use strict";
+
 require("mocha");
 const proxyquire = require("proxyquire");
 const chai = require("chai");

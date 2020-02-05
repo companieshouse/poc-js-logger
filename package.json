@@ -5,7 +5,7 @@
   "main": "./lib/index.js",
   "scripts": {
     "test": "mocha --recursive --reporter nyan",
-    "lint": "eslint index.js lib/**/*.js",
+    "lint": "eslint lib test",
     "test:watch": "mocha --recursive --reporter nyan --watch"
   },
   "repository": {
