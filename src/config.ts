@@ -7,4 +7,4 @@ const config = {
         process.env.HUMAN_LOG === "1"
 };
 
-module.exports = config;
+export = config;

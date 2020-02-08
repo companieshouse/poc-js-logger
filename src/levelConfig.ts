@@ -1,6 +1,8 @@
 "use strict";
 
-const logLevels = {
+import { AbstractConfigSetColors, AbstractConfigSetLevels } from "winston/lib/winston/config";
+
+const levelConfig: { levels: AbstractConfigSetLevels, colours: AbstractConfigSetColors } = {
     levels: {
         error: 0,
         info: 1,
@@ -17,4 +19,4 @@ const logLevels = {
     }
 };
 
-module.exports = logLevels;
+export = levelConfig;
