@@ -39,7 +39,7 @@ class MiddlewareFactory {
 
             return next();
         };
-    
+
         return middleware;
     }
 }
